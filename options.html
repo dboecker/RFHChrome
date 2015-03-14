@@ -1,0 +1,48 @@
+<html>
+    <style>
+      body {
+        min-width:465px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		max-height:100px;
+      }
+    </style>
+	<title>RFH Grades Optionen</title>
+	<body>
+		<div style="text-align:center; margin-left: auto;
+	margin-right: auto;
+	width: 50em;">
+		<h1>Optionen</h1>
+	
+		Damit du <b>Push Notifications</b> oder <b>eine E-Mail</b> bei neuen Noten erhalten kannst, müssen folgende Daten werden auf einem Server gespeichert werden<br/><br/>
+		Das Ganze funktioniert allerdings nur wenn möglichst viele aus deinem Studiengang diese Erweiterung nutzen. Also: Spread the Word!<br/><br/>
+		Deine Matrikelnummer (notwendig für Push Notifications auf deinem iPhone)<br/>
+		Deine offenen Prüfungen (Bezeichnung)<br/>
+		<br/>
+		Was <b>auf keinen Fall übermittelt werden</b> deine<br/>
+		- Noten<br/>
+		- Dein Passwort zu Studse<br/>
+		<br/><br/><br/>
+		Ich erlaube der App diese Daten zum Wohle meiner Kommilitonnen zu übermitteln:
+		<br/>
+		<select id="allowedSubmission"><br/>
+		 <option value="no">Nein</option>
+		 <option value="yes">Ja</option>
+		</select>
+		<br/><br/><br/><b>E-Mail Benachrichtigungen</b><br/>
+		Gib hier deine E-Mailadresse ein damit du über neue Noten per Mail informiert wirst (kein Spam!)<br/><br/>
+		Deine Mailadresse <input type="text" id="txtMail"/>
+		
+		<br/><br/><br/><b>Push Notifications (iOS)</b>
+		<br/><span id="pushInfo"></span><br/><br/><br/>
+		<button id="btnSave">Speichern</button>
+		<br/><br/>
+		Bei Fragen kannst du dich direkt an mich wenden: hhessel@web.de
+		<br/><br/>
+		<span id="savedOptions"></span>
+		<br/><br/><br/><br/>
+		<script src='jquery-1.7.2.min.js'></script>
+		<script src="shared.js"></script>
+		<script src="options.js"></script>
+	</body>
+</html>

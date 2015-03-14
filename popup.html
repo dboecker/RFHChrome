@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+	 <meta charset="utf-8">
+    <title>RFH</title>
+    <style>
+      body {
+        min-width:465px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		max-height:100px;
+      }
+    </style>
+
+  </head>
+  <body style="height:100px;">
+	<div id="divLogin">
+		<form id="fLogin">
+			Matrikelnummer <br/>
+			<input type="text" id="user" name="Benutzer" tabindex="1" /><br/>
+			Passwort <br/>
+			<input type="password" id="pass" name="passcode" tabindex="2" /><br/>
+			<input type="hidden" name="login" value="Login" />
+			<input type="button" id="btnLogin" value="Einloggen" tabindex="3" />
+		</form>
+	</div>
+	
+	<div id="divLogout" style="display:none;">
+		<input type="button" id="btnLogout" value="Logout" tabindex="4" /> 
+<!-- 		<input type="button" id="btnOptionen" value="Optionen" tabindex="5" />  -->
+		<span id="divLoading" style="right:5px; bottom:5px; display:none; position:absolute;" > <img src="ajax-loader.gif"> </span>
+	</div>
+	<div style="overflow:scroll; max-height:330px; max-weight:470px; overflow-x: hidden; border-top:1px solid #000;" id="divContainer">
+		<div id="resp"></div>
+	</div>
+	<div id="divInfo" style="border-top:1px solid #000; padding-top:5px; max-height:50px; height:50px;"></div>
+	<span id="divLoading" style="right:30px; bottom:10px; position:absolute; font-size:10px;" > Henrik Hessel 2013 [ Version <span id="divVersion">1.3.1</span> ]<br/>Feedback [ hhessel@web.de ]<br/>
+		<a href="http://itunes.apple.com/de/app/rfh-grades/id458758492?mt=8" title="iOS App">iPhone App</a> <a id="studselink">Studse öffnen</a>
+		</span>
+
+	</span>
+	
+
+	<script src='jquery-1.7.2.min.js'></script>
+	<script src="date.js"></script>
+	<script src="date.de-De.js"></script>
+	<script src="shared.js"></script>
+    <script src="popup.js"></script>
+	<script src="background.js"></script>
+  </body>
+  
+  
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "RFH Grades",
+  "version": "1.5.8",
+  "manifest_version": 2,
+  "description": "Erweiterung zum Prüfen der Noten (RFH) - Funktionalität und Angaben ohne Gewähr",
+  "content_scripts": [
+    {
+      "matches": ["file://*"], 
+      "js": ["jquery-1.7.2.min.js", "date.js", "date.de-De.js", "shared.js",  "popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon_128.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["jquery-1.7.2.min.js", "date.js", "date.de-De.js", "shared.js", "background.js"]
+  },
+  "permissions": [
+    "https://www.studse.rfh-koeln.de/", "background", "notifications"
+  ]
+}
