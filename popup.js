@@ -50,7 +50,7 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 		$('#divLogin').hide();
 		$('#divLogout').show();
 	} else if (request.method == "loginFailed") {
-		$('#divInfo').html("Logging failed!").fadeIn('slow');
+		$('#divInfo').html("Login failed!").fadeIn('slow');
 	} else if (request.method == "loading") {
 		console.log("show spinner");
 		$('#divLoading').show();
