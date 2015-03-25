@@ -21,7 +21,7 @@ function login () {
 	  url: 'https://www.studse.rfh-koeln.de/?func=login_check',
 	  data: localStorage["credentials"],
 	  success: function(data) {
-		var sessionId = getURLParameter('PHPSESSID',  $("a=*[title='Prüfungsrelevante Daten']", data).attr('href'));
+		var sessionId = getURLParameter('PHPSESSID=',  $("<a=*[title='Prüfungsrelevante Daten']*>", data).attr('href'));
 		
 		if(sessionId.length > 5) {
 			localStorage["session"] = sessionId;
@@ -157,5 +157,3 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 		pullNotes();
 	}
 });
-
-
