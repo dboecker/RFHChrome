@@ -17,7 +17,7 @@ $("#sendform").click(function() {
 function getResult () {
 	document.getElementById("resp").innerText = "Getting info";
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "https://studse.rfh-koeln.de", true);
+	xhr.open("GET", "https://www.studse.rfh-koeln.de", true);
 	xhr.onreadystatechange = function() {
 	  if (xhr.readyState == 4) {
 		// innerText does not let the attacker inject HTML elements.
