@@ -32,6 +32,7 @@ function login () {
 
 			
 		} else {
+			var message = "loginFailed, SESSIONID: "+sessionId;
 			localStorage["loggedIn"] = false;
 			chrome.extension.sendMessage({method: "loginFailed"});
 		}
